@@ -1,0 +1,301 @@
+/* Reset e Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Preto como cor de fundo */
+    color: #fff;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #000;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+
+/* Navegação */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #000;
+    background: #ff8000;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+/* Seções */
+
+#inicio {
+    position: relative;
+    background: url(img/2.jpeg) no-repeat center center;
+    background-size: cover;
+    padding: 300px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+
+}
+
+#inicio h2 {
+    font-size: 50px;
+}
+
+#inicio h2, #inicio p {
+    position: relative;
+    z-index: 1;
+}
+section {
+    padding: 150px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: #000;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 128, 0, 0.5); /* Sombra laranja */
+}
+
+
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #ff8000;
+}
+
+/* Nosso Plantel */
+.plantel-grid {
+    display: flex;
+    flex-direction:wrap;
+    justify-content: center;
+    gap: 15px;
+    
+    
+}
+
+.cachorro {
+    background: #000;
+    border: 3px solid #ff8000;
+    padding: 10px;
+    border-radius: 8px;
+    width: 220px;
+    height: auto;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(255, 128, 0, 0.5);
+}
+
+.cachorro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cachorro h3 {
+    margin-top: 1rem;
+    color: #ff8000;
+}
+
+.cachorro p {
+    color: #ddd;
+}
+
+/* Galeria */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.grid img {
+    width: calc(25% - 10px);
+    max-width: 220px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    border: 3px solid #ff8000;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+    border-color: #fff;
+}
+
+/* Contato */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #000;
+    
+}
+
+.contato-column {
+    width: 50%;
+    color: #fff;
+}
+
+.container h3 {
+    color: #ff8000;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 30px; /* Tamanho dos ícones */
+    color: #444; /* Cor inicial */
+    transition: transform 0.3s ease-in-out, color 0.3s;
+
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}
+
+.social-icon:nth-child(1):hover {
+    color: #1877F2; /* Cor azul do Facebook */
+}
+
+.social-icon:nth-child(2):hover {
+    color: #E4405F; /* Cor rosa do Instagram */
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:30px;
+padding:20px;
+border-radius:60%;
+}
+
+
+
+/* Rodapé */
+footer {
+    background: #000;
+    color: #ff8000;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .plantel-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid img {
+        width: 90%;
+    }
+    
+
+
+    .logo {
+        width: 130px;
+    }
+
+    .logo-contato {
+        width: 80px;
+    }
+
+           .contato-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .contato-column {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    
