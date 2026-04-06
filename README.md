@@ -17,5 +17,12 @@ Este projeto é um site institucional desenvolvido para apresentar um canil, com
 ## ▶️ Como executar
 Abra o arquivo `index.html` no navegador
 
+## 📷 Preview
+
+![Preview do projeto](preview.png)
+
+## 🔗 Acesse o projeto
+https://alexandrelemosdev.github.io/site-canil-haus-bruder/
+
 ## 📚 Aprendizados
 Neste projeto foram aplicados conceitos de HTML, CSS e responsividade no desenvolvimento de páginas web.
